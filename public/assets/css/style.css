@@ -40,6 +40,7 @@ img {
  	font-family: 'Kaushan Script', cursive;
  	color: #fffb96;
  	text-decoration: underline;
+ 	text-shadow: 3px 1px #ff71ce;
  	
  }
  h4{
@@ -53,7 +54,7 @@ img {
  h5{
  	font-family: 'Kaushan Script', cursive;
  	color: #b967ff;
- 	text-shadow: 1px 1px red;
+ 	text-shadow: 1px 1px #ff71ce;
  	font-size: 25px;
  	
  }
