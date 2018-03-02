@@ -3,7 +3,7 @@
 	{{!-- div with burger picture --}}
 	<div class="row">
 		<div class="col-md-12">
-			<img src="/assets/img/burger.png" alt="burger" class="img-responsive center-block">
+			<img src="/assets/img/goodburg-36.gif" alt="burger" class="center-block">
 		</div>
 
 	<!-- end first row -->
@@ -11,18 +11,19 @@
 
 	<div class="row">
 
-		<div class="col-md-12">
-			<h1 class="text-center text-danger">Welcome To Good Burger</h1>
-			<h4>Home of the Good Burger</h4>
+		<div id="welcome"class="col-md-12">
+			<h1 class="text-center">Welcome To Good Burger</h1>
+			<h4 class="text-center">Home of the Good Burger</h4>
 		</div>
-	
+
+
 	<!-- end second row -->
 	</div>
 
 	<div class="row">
 
 		<div class="col-md-5">
-			<h3>Uneaten Burgers</h3>
+			<h3>Uneaten Burgers:</h3>
 			<ul>
 				{{#each burgers}}
 					{{#unless this.devoured}}
@@ -30,7 +31,7 @@
 							<h5>{{this.id}}. {{this.burger_name}}
 								<form action='burgers/updateOne/{{this.id}}?_method=PUT' method='POST'>
 									<input type='hidden' name='devoured' value='true'>
-									<button type='submit' class="btn btn-default">EAT THIS!</button>
+									<button type='submit' class="btn btn-default" id="eatButton"><span  class="glyphicon glyphicon-search"></span>EAT THIS!</button>
 								</form>
 							</h5>
 						</li>
@@ -42,7 +43,7 @@
 		<div class="col-md-2"></div>
 
 		<div class="col-md-5">
-			<h3 class="text-muted">Eaten Burgers</h3>
+			<h3 id="eatenText" class="text-muted">Eaten Burgers:</h3>
 			<ul>
 				{{#each burgers}}
 					{{#if this.devoured}}
@@ -66,7 +67,7 @@
 				<div class="form-group">
 					<!-- <label for="bg">Burger Name:</label> -->
 					<textarea type="text" name="name"></textarea><br>
-					<button class="btn btn-default" type="submit">Submit</button>
+					<button id="subButton" class="btn btn-default" type="submit">Submit</button>
 					<h5 class="text-center">Can I take your order?</h5>
 				</div>
 			</form>

@@ -1,9 +1,73 @@
 body {
-	background-color: lightgray;
+	/*background-image: url("https://cdn.movieweb.com/img.news.tops/NEeLc7QMJNXsij_1_b/Good-Burger-2-Petition.jpg");*/
+	background-color: #01cdfe;
 	margin-top: 20px;
+	border-style: solid;
+	border-width: 20px;
+	border-color: #ff71ce;
+
+	/*border-radius: 60px;*/
 }
 
 img {
-	width: 200px;
+	width: auto;
 	height: auto;
+	margin:20px;
+
+	 
+	
 }
+ #welcome{
+ 	background-color: #05ffa1;
+ 	margin-top: 20px;
+ 	margin-bottom: 20px;
+ 	border-style: solid;
+	border-width: 10px;
+	border-color: #ff71ce;
+
+	border-radius: 20px;
+ }
+
+ h1{
+ 	font-family: 'Kaushan Script', cursive;
+ 	font-size: 100px;
+ 	color: #b967ff;
+ }
+ h3{
+ 	font-family: 'Kaushan Script', cursive;
+ 	color: #fffb96;
+ }
+ h4{
+ 	font-family: 'Kaushan Script', cursive;
+ 	font-size: 50px;
+ 	color: #fffb96;
+
+ }
+ h5{
+ 	font-family: 'Kaushan Script', cursive;
+ 	color: #b967ff;
+ 	
+ }
+
+ #eatenText{
+ 	color: red;
+ }
+
+ #eatButton{
+ 	background-color: #05ffa1;
+ 	border-style: solid;
+	border-width: 5px;
+	border-color: #ff71ce;
+
+	border-radius: 20px;
+
+ }
+
+ #subButton{
+ 	background-color: #05ffa1;
+ 	border-style: solid;
+	border-width: 5px;
+	border-color: #ff71ce;
+
+	border-radius: 20px;
+ }
